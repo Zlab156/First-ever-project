@@ -1,0 +1,50 @@
+body{
+    background-color: gray;
+}
+
+
+
+.container {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+    grid-template-columns: 30px repeat(7, 1fr);
+    grid-template-rows: 70px 400px 1fr;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sd sd main main main main main main";
+    
+    border: 2px solid yellow;
+    }
+    
+    
+    main{
+        background-color: red
+    }
+
+
+    .box {
+        border: 1px blue;
+        background-color: white;
+    }
+
+    .header {
+        grid-area: hd;
+    }
+
+    .sd{
+        grid-area: sd;
+    }
+
+    .content{
+        grid-area: main;
+    }
+    
+
+    
+
+    
+
+    
+
