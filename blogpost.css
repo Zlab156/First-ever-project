@@ -1,33 +1,70 @@
-.container{
+body{
+    background-color: gray;
+    height: 100vh;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+.grid-container {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 100px 350px 600px 100px;
-    grid-template-areas:
-    "hd hd hd hd hd hd hd hd"
-    "feat feat feat feat feat feat feat feat"
-    "main main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
-    border: 2px solid yellow;
+    grid-template-columns: 450px 450px 450px;
+    gap: 45px 45px;
+    height: 100vh;
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  
+  .Truck__image {
+      width: 100%;
+      display: block;
+  }
 
-}
+.Dogs__image {
+      width: 100%;
+      display: block;
+  }
 
-.box{
-    border: 1px solid red;
-    background: gray;
-}
+  .Electronic__image {
+      width: 100%;
+      display: block;
+  }
+  
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    
+    @media (min-width:320px) and (max-width:600px) {
+        .grid-container {
+            display: inline-block;
+            grid-template-columns: 400px 400px 400px;
+            grid-template-rows: auto;
+            height: 100%;
+            width: fit-content;
+            margin: 0;
+          }  
+    }
 
-.header{
-    grid-area:hd;
-}
 
-.footer{
-    grid-area: ft;
-}
 
-.feature{
-    grid-area: feat;
-}
+    @media (min-width:600px) and (max-width:1100px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: 450px 450px 450px;
+            gap: 40px 40px;
+            height: 100vh;
+            margin: 0;
+          }  
+    }
 
-.content{
-    grid-area: main;
-}
+    @media (min-width:1101px) {
+        .grid-container {
+            display: grid;
+            grid-template-columns: 450px 450px 450px;
+            gap: 40px 40px;
+            height: 100vh;
+            margin: 0;
+        }
+    }
