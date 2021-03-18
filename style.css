@@ -1,5 +1,5 @@
 @import url(homemedia.css);
-
+@import url(media.css);
 #header {
     display: flex;
     flex-direction: row;
@@ -31,28 +31,23 @@
     grid-area: ft;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
-    .header {
-        display: inline-block;
-        flex-direction: column;
-        justify-content: space-between;
-        width: fit-content;
-        margin: 0;
-    }
+.blogpost {
+	background-color:#4478c7;
+	border-radius:28px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
 }
-
-@media (min-width: 600px) and (max-width: 1100px) {
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.blogpost:hover {
+	background-color:#5cbf2a;
 }
-
-@media (min-width: 1101px) {
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.blogpost:active {
+	position:relative;
+	top:1px;
 }
