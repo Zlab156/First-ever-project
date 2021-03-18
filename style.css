@@ -1,69 +1,58 @@
-body{
-    background-color:white;
-    margin: 10px;
-
-}
+@import url(homemedia.css);
 
 #header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    }
-    
+}
 
-    #main{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-    }
-.Picofme__image {
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Pictofme__image {
     width: 100%;
     display: block;
 }
+.header {
+    grid-area: hd;
+}
+
+.sd {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
     .header {
-        grid-area: hd;
-    }
-
-    .sd{
-        grid-area: sd;
-    }
-
-    .content{
-        grid-area: main;
-    }
-    
-
-    .footer{
-        grid-area: ft;
-    }
-
-
-@media (min-width:320px) and (max-width:600px){
-    .header{ 
         display: inline-block;
         flex-direction: column;
         justify-content: space-between;
         width: fit-content;
         margin: 0;
     }
-
-
 }
-    
-@media (min-width:600px) and (max-width:1100px){
-    .header{
+
+@media (min-width: 600px) and (max-width: 1100px) {
+    .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 }
 
-@media (min-width:1101px){
-    .header{
+@media (min-width: 1101px) {
+    .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
     }
 }
